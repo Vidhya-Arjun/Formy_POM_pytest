@@ -6,7 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-
+from TestData.Testdata import FormyData
 
 def capture_screenshot(driver,test_name):
     folder = "Screenshots/"+test_name+"/"
@@ -40,7 +40,7 @@ def setup_browser():
     )
 
     driver.implicitly_wait(25)
-    driver.get(SauceDemoData.url)
+    driver.get(FormyData.url)
 
     yield driver
 
