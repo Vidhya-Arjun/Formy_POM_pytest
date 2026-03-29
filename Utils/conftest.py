@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from TestData.Testdata import FormyData
 
 def capture_screenshot(driver,test_name):
-    folder = "Screenshots/"+test_name+"/"
+    folder = "Screenshots"
     os.makedirs(folder,exist_ok=True)
     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     filename = f"{test_name}+{timestamp}+.png"
