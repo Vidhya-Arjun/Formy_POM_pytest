@@ -21,7 +21,7 @@ def capture_screenshot(driver,test_name):
 @pytest.fixture(scope="session")
 def setup_browser():
     options = Options()
-    options.add_argument("--headless=new")
+    # options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
